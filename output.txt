@@ -1,0 +1,882 @@
+
+In [2]:
+
+
+
+#Print World
+print("Hello World")
+
+
+
+Hello World
+In [4]:
+
+
+#Operator
+#Mathemetical operation
+''' 
++
+-
+*
+//
+**
+% 
+'''
+​
+​
+​
+
+
+Out[4]:
+6
+In [5]:
+
+
+2+2
+
+
+Out[5]:
+4
+In [6]:
+
+
+4-2
+
+
+Out[6]:
+2
+In [7]:
+
+
+5*4
+
+
+Out[7]:
+20
+In [8]:
+
+
+5/2
+
+
+Out[8]:
+2.5
+In [9]:
+
+
+5//2 #integral division
+
+
+Out[9]:
+2
+In [10]:
+
+
+5**3 #5*5*5
+
+
+Out[10]:
+125
+In [11]:
+
+
+2+3*5+10/2 #bodmas rule
+
+
+Out[11]:
+22.0
+In [12]:
+
+
+6-(3**2)/8 #bodmas rule
+
+
+Out[12]:
+4.875
+In [13]:
+
+
+3.0/2
+
+
+Out[13]:
+1.5
+In [14]:
+
+
+#Variable assignment
+a=2
+
+
+
+In [15]:
+
+
+a
+
+
+Out[15]:
+2
+In [16]:
+
+
+a*50
+
+
+Out[16]:
+100
+In [54]:
+
+
+print('hello' * 3)
+
+
+
+hellohellohello
+In [22]:
+
+
+c = "Hello World"
+
+
+
+In [23]:
+
+
+c
+
+
+Out[23]:
+'Hello World'
+In [25]:
+
+
+print(c)
+
+
+
+Hello World
+In [26]:
+
+
+"hello let't try this one"
+
+
+Out[26]:
+"hello let't try this one"
+In [27]:
+
+
+#Tax calulation
+personal_income = 100000
+tax = personal_income*10/100
+print(tax)
+
+
+
+10000.0
+In [28]:
+
+
+#Area of a circle
+pi = 3.14
+radious = 5
+area = pi*radious**2
+print (area)
+​
+
+
+
+78.5
+In [29]:
+
+
+round(78.5)
+
+
+Out[29]:
+78
+In [30]:
+
+
+round(1.666666,2)
+
+
+Out[30]:
+1.67
+In [31]:
+
+
+round(1.666666,3)
+
+
+Out[31]:
+1.667
+In [32]:
+
+
+round(1.666666,-2)
+
+
+Out[32]:
+0.0
+In [33]:
+
+
+#Type Conversion
+int(5.9)
+
+
+Out[33]:
+5
+In [34]:
+
+
+float(5)
+
+
+Out[34]:
+5.0
+In [35]:
+
+
+a = str(5)
+
+
+
+In [36]:
+
+
+a
+
+
+Out[36]:
+'5'
+In [39]:
+
+
+a = int(a)
+
+
+
+In [38]:
+
+
+a
+
+
+Out[38]:
+'5'
+In [41]:
+
+
+# "",'' and escape sequence
+''' 
+\a: alert
+\b: backspace
+\cx: Control X
+\e: escape
+\f: Form feed
+\n: New line or next line
+\r: carriage return
+\s: space
+\t: tab
+\v: Vertical Tab '''
+mystory = 'I don't like to eat cheese'
+
+
+
+  File "<ipython-input-41-5c4a7ecf716f>", line 2
+    Mystory = 'I don't like to eat cheese'
+                     ^
+SyntaxError: invalid syntax
+
+
+In [46]:
+
+
+mystory = "I don't like to eat cheese"
+print(mystory)
+
+
+
+I don't like to eat cheese
+In [47]:
+
+
+mystory = "I don't like to eat \"cheese\""
+print(mystory)
+
+
+
+I don't like to eat "cheese"
+In [98]:
+
+
+print('Alone we can\ndo little;\nTogether we can\ndo more.')
+
+
+
+Alone we can
+do little;
+Together we can
+do more.
+
+
+
+#Concatination operator
+a = "Sachin"
+b = "Tendulkar"
+c = a+' '+b
+print(c)
+
+In [51]:
+
+
+#Formated statement
+name =  'Jyotiranjan'
+age = 30
+print('My name:{one} and my age is {two}'.format(one=name,two=age))
+
+
+
+My name:Jyotiranjan and my age is 30
+In [52]:
+
+
+name =  'Jyotiranjan'
+age = 30
+print('My name:{} and my age is {}'.format(name,age))
+
+
+
+My name:Jyotiranjan and my age is 30
+In [92]:
+
+
+print ('Here is your name: %s. Here ia your age %s' %('abc',30))
+
+
+
+Here is your name: abc. Here ia your age 30
+In [53]:
+
+
+#
+name =  'Jyotiranjan'
+age = 30
+print('My name:{} and my age is {}'.format(name,age))print(3 * 'hello')
+
+
+
+hellohellohello
+In [59]:
+
+
+#basic Methods and Functions
+print ("Nick".upper())
+print(len("hello World"))
+print("Hi my name is Manish".replace("Manish","Singh"))
+
+
+
+NICK
+11
+Hi my name is Singh
+In [62]:
+
+
+abc = "test"
+print(abc);
+print(abc.replace("test","hello")) 
+print(abc)
+
+
+
+test
+hello
+test
+In [63]:
+
+
+#split
+print(abc.split())
+​
+
+
+
+['test']
+In [66]:
+
+
+print(abc.split("e"))
+
+
+
+['t', 'st']
+In [70]:
+
+
+#Comparison Operator
+'''  == ,!=  <> > < '''
+a =  5
+b= '5'
+print(a == b) # false
+a === b
+#Logical operator and(&&) or(||)
+
+
+
+  File "<ipython-input-70-a39d13648b13>", line 6
+    a === b
+        ^
+SyntaxError: invalid syntax
+
+
+In [73]:
+
+
+#Input
+age = input("Enter your age")
+print("Your age is" + age)
+
+
+
+Enter your age30
+Your age is30
+In [86]:
+
+
+#Tax calulation
+personal_income = int(input("Enter Your personal income "))
+tax = int(input("Enter your tax slab "))
+amount = personal_income*tax/100
+netamount= personal_income - amount
+print('Tax amount is:{}'.format(amount))
+print('Tax netamount is:{}'.format(netamount))
+
+
+
+Enter Your personal income 100000000
+Enter your tax slab 10
+Tax amount is:10000000.0
+Tax netamount is:90000000.0
+In [93]:
+
+
+amount
+
+
+Out[93]:
+10000000.0
+In [113]:
+
+
+#string oiperation
+var = 'Hello world'
+print(var[0])
+print(var[-1])
+print(var[-2])
+print(var[:])
+print(var[::])
+print(var[2:])
+print(var[2::3])#upper boundary exclued,lower boundary included
+print(var[::5])
+print(var[:5])
+​
+
+
+
+H
+d
+l
+Hello world
+Hello world
+llo world
+l r
+H d
+Hello
+In [114]:
+
+
+var = "Hello World"
+var.isupper()
+
+
+Out[114]:
+False
+In [115]:
+
+
+var.isalpha()
+
+
+Out[115]:
+False
+In [116]:
+
+
+var.isalnum()
+
+
+Out[116]:
+False
+In [118]:
+
+
+var.islower()
+
+
+Out[118]:
+False
+In [119]:
+
+
+#Collection
+'''
+list --[]
+tuples--()
+map
+dictonary--{}
+set
+'''
+
+
+Out[119]:
+'\nlist --[]\nmap\ndictonary\n\n'
+In [120]:
+
+
+#list []
+x=[1,2,3,"hi"]
+x
+
+
+Out[120]:
+[1, 2, 3, 'hi']
+In [122]:
+
+
+y=[1,x]
+y
+
+
+Out[122]:
+[1, [1, 2, 3, 'hi']]
+In [123]:
+
+
+#access the list element
+y[0]
+
+
+Out[123]:
+1
+In [124]:
+
+
+y[1]
+
+
+Out[124]:
+[1, 2, 3, 'hi']
+In [126]:
+
+
+y[1][0]
+
+
+Out[126]:
+1
+In [127]:
+
+
+y[1:]
+
+
+Out[127]:
+[[1, 2, 3, 'hi']]
+In [129]:
+
+
+y[1][1:]
+
+
+Out[129]:
+[2, 3, 'hi']
+In [130]:
+
+
+y[0]='list'
+
+
+
+In [131]:
+
+
+y
+
+
+Out[131]:
+['list', [1, 2, 3, 'hi']]
+In [155]:
+
+
+x.append('add new item')
+x
+
+
+Out[155]:
+[1, 2, 3, 'hi', 'add new item', 'add new item']
+In [156]:
+
+
+x.reverse()
+x
+
+
+Out[156]:
+['add new item', 'add new item', 'hi', 3, 2, 1]
+In [159]:
+
+
+x.remove('add new item')
+x
+
+
+Out[159]:
+['hi', 3, 2, 1]
+In [166]:
+
+
+x.sort()
+
+
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-166-5edff3203de0> in <module>()
+----> 1 x.sort()
+
+TypeError: '<' not supported between instances of 'int' and 'str'
+
+In [ ]:
+
+
+#nested list
+list1
+list2
+list2
+new_list[list1,list2,list3]
+
+
+
+In [134]:
+
+
+#Dictonary -key and value {key:value}
+dict_ = {1:'test',2:'abc'}
+dict_
+
+
+Out[134]:
+{1: 'test', 2: 'abc'}
+In [142]:
+
+
+dict_.keys()
+
+
+Out[142]:
+dict_keys([1, 2])
+In [148]:
+
+
+y = {'x':[1,2,3]}
+y.values()
+
+
+Out[148]:
+dict_values([[1, 2, 3]])
+In [167]:
+
+
+#tuples -- immutable
+tup1 = (1,2,3,4,5)
+tup1[0] = "new"
+
+
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-167-5ac489c981aa> in <module>()
+      1 #tuples
+      2 tup1 = (1,2,3,4,5)
+----> 3 tup1[0] = "new"
+
+TypeError: 'tuple' object does not support item assignment
+
+In [168]:
+
+
+max(tup1)
+
+
+Out[168]:
+5
+In [170]:
+
+
+len(tup1)
+
+
+Out[170]:
+5
+In [171]:
+
+
+3 in tup1
+
+
+Out[171]:
+True
+In [173]:
+
+
+#set -- cointains distnt element only
+set1 = {1,2,3}
+len(set1)
+
+
+Out[173]:
+3
+In [175]:
+
+
+set1.update({4,5}) # append will not work with set,set element can't be acces perticulr elemnt
+set1
+
+
+Out[175]:
+{1, 2, 3, 4, 5}
+In [176]:
+
+
+{1,2,2,3,3,3,4,4,4,4,4,4,4,4}
+
+
+Out[176]:
+{1, 2, 3, 4}
+In [182]:
+
+
+#control statement 
+x = False
+if x :
+    print("in if")
+else:
+    print("in else")
+
+
+
+in else
+In [186]:
+
+
+loc = 'Bank'
+if loc == 'Auto Shop':
+    print ('Welcome to the Auto Shop!')
+elif loc == 'Bank':
+    print ('Welcome to the bank!')
+else:
+     print ('Where are you')
+
+
+
+Welcome to the bank!
+In [194]:
+
+
+#Tax calulation
+personal_income = int(input("Enter Your personal income "))
+if(personal_income <= 20000):
+    tax = 3
+elif (personal_income <= 30000):
+    tax = 5
+elif (personal_income <= 50000):
+    tax = 10
+else:
+    tax = 20
+    
+amount = personal_income*tax/100
+netamount= personal_income - amount
+print('Tax amount is:{}'.format(amount))
+print('Tax netamount is:{}'.format(netamount))
+
+
+
+Enter Your personal income 30000
+Tax amount is:1500.0 5
+Tax netamount is:28500.0
+In [196]:
+
+
+#loops
+​
+var =  int(input("Enter the number rage to print"))
+for i in range(0,var): 
+    print(i)
+
+
+
+Enter the number rage to print2
+0
+1
+In [197]:
+
+
+#nested loop
+list1 = [1,2,3]
+for r in list1:
+    print(r)
+
+
+
+1
+2
+3
+In [201]:
+
+
+i = 5
+for r in range(0,i):
+    print(i*'*')
+    i = i-1
+    
+
+
+
+*****
+****
+***
+**
+*
+In [203]:
+
+
+#function
+def addition(a,b):
+    c = a+b
+    return c
+print(addition(80,9))
+
+
+
+89
+In [ ]:
+
+
+​
+
+
+
