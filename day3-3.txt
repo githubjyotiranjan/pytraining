@@ -1,0 +1,42 @@
+
+
+0
+1
+2
+3
+4
+Here
+In [25]:
+
+
+df = pd.read_html('https://www.moneycontrol.com/')
+?
+
+
+
+In [22]:
+
+
+#SQL(Optional)
+from sqlalchemy import create_engine
+
+
+
+In [23]:
+
+
+engine = create_engine('sqlite:///:memory:')
+
+
+
+In [26]:
+
+
+df.to_sql('data', engine)
+
+
+
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-26-931b4fd1ecb2> in <module>()
+----> 1 df.to_sql('data', engine)

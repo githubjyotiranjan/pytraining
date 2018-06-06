@@ -1,0 +1,5 @@
+file=open("fun.txt", "w")
+file.write("hello Io am fine \n fisrt file")
+file.close()
+file=open("fun.txt", "r")
+print(file.read())

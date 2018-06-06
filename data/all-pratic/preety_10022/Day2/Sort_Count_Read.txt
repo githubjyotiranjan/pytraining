@@ -1,0 +1,3 @@
+Every numpy array is a grid of elements of the same type.Numpy provides a large set of numeric datatypes that you can use to construct arrays.
+Numpy tries to guess a datatype when you create an array, but functions that construct arrays usually also include an optional argument to explicitly specify the datatype.
+Here is an example:

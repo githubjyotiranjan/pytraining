@@ -1,0 +1,21 @@
+
+income= int(input("enter your salary"))
+
+if (income >= 10000 and income <= 20000):
+    tax = int(income * 3/100)
+    netincome = income - tax
+    print("your net income is {} and tax is {} ".format(netincome, tax))
+elif(income >= 20000 and income <= 30000):
+    tax =int(income * 5/100)
+    netincome = income - tax
+    print("your net income is {} and tax is {} ".format(netincome, tax))
+elif(income >= 30000 and income <= 50000):
+    tax = int(income * 10/100)
+    netincome = income - tax
+    print("your net income is {} and tax is {} ".format(netincome, tax))
+elif(income >= 50000):
+    tax = int(income * 20/100)
+    netincome = income - tax
+    print("your net income is {} and tax is {} ".format(netincome, tax))
+else:
+    print("no tax")

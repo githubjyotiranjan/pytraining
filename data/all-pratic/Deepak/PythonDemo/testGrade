@@ -1,0 +1,12 @@
+income= int(input("enter your marks"))
+
+if (income >= 90 and income <= 100):
+    print("your grade is A+")
+elif(income >= 80 and income <= 89):
+    print("your grade is B")
+elif(income >= 70 and income <= 79):
+    print("your grade is C")
+elif(income >= 60 and income <= 69):
+    print("your grade is D")
+else:
+    print("Fail")

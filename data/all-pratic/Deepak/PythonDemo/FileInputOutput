@@ -1,0 +1,14 @@
+from collections import Counter
+import json
+import re
+
+fileInput = open("fun.txt", "r")
+cleanString = re.sub('\W+', '', fileInput)
+text = cleanString.read().split(' ')
+
+b = Counter(text)
+b.most_common()
+
+with open('testfile.txt', 'w') as file:
+    file.write(json.dumps(b))
+# print(b)
